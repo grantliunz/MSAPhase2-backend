@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "oPtcRqajFxU5RbD35w7LrZCa4OXO6QETbTmfw46yQWEM5SRyJRhvwv6ab15PAYmFV5bzfBln+DsRBhwW8Fjpfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\grant\\Desktop\\code\\MSA\\backend\\PetAPI\\PetAPI\\PetAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\grant\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\grant\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\grant\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\grant\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\grant\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\grant\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

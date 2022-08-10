@@ -5,6 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+ConfigurationManager configuration = builder.Configuration;
+IWebHostEnvironment environment = builder.Environment;
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -28,23 +32,34 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 
+    // using System.Reflection;
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+
 
 });
 
-builder.Services.AddHttpClient("reddit", configureClient: client =>
+//Dependency Injection simplifies code by allowing us to add dependencies to out controller,
+//such as this httpclient
+builder.Services.AddHttpClient("pet", configureClient: client =>
 {
-    client.BaseAddress = new Uri("https://www.reddit.com/dev/api");
+    client.BaseAddress = new Uri(configuration["PetResponseAddress"]);
 });
 
-builder.Services.AddHttpClient("cat", configureClient: client =>
-{
-    client.BaseAddress = new Uri("https://http.cat/");
-});
+
+
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();

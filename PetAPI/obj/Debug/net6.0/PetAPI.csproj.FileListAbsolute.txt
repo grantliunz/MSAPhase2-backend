@@ -25,3 +25,6 @@ C:\Users\grant\Desktop\code\MSA\backend\PetAPI\PetAPI\obj\Debug\net6.0\refint\Pe
 C:\Users\grant\Desktop\code\MSA\backend\PetAPI\PetAPI\obj\Debug\net6.0\PetAPI.pdb
 C:\Users\grant\Desktop\code\MSA\backend\PetAPI\PetAPI\obj\Debug\net6.0\PetAPI.genruntimeconfig.cache
 C:\Users\grant\Desktop\code\MSA\backend\PetAPI\PetAPI\obj\Debug\net6.0\ref\PetAPI.dll
+C:\Users\grant\Desktop\code\MSA\backend\PetAPI\PetAPI\bin\Debug\net6.0\appsettings.Production.json
+C:\Users\grant\Desktop\code\MSA\backend\PetAPI\PetAPI\bin\Debug\net6.0\PetAPI.xml
+C:\Users\grant\Desktop\code\MSA\backend\PetAPI\PetAPI\obj\Debug\net6.0\PetAPI.xml

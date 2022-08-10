@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PetAPI</name>
+    </assembly>
+    <members>
+        <member name="M:PetAPI.Controllers.PetController.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary />
+            
+        </member>
+        <member name="M:PetAPI.Controllers.PetController.GetPets">
+            <summary>
+            This is endpoint takes no arguments and returns the list of pets
+            </summary>
+            <returns>The list of pets</returns>
+        </member>
+        <member name="M:PetAPI.Controllers.PetController.GetPet(System.Int32)">
+            <summary>
+            Gets the pet object of a specific ID
+            </summary>
+            <param name="id">The id of the pet, which must be a valid integer</param>
+            <returns>The pet object</returns>
+        </member>
+        <member name="M:PetAPI.Controllers.PetController.AddPet(PetAPI.Pet)">
+            <summary>
+            Adds a pet object to the list of pets
+            </summary>
+            <param name="request">The pet object to be added</param>
+            <returns>Ok response in the form of pet image</returns>
+        </member>
+        <member name="M:PetAPI.Controllers.PetController.UpdatePet(PetAPI.Pet)">
+            <summary>
+            Updates an existing pet object
+            </summary>
+            <param name="request">The pet object to be updated</param>
+            <returns>THe updated list of pets</returns>
+        </member>
+        <member name="M:PetAPI.Controllers.PetController.DeletePet(System.Int32)">
+            <summary>
+            Removes a pet of specific Id from list
+            </summary>
+            <param name="Id">The Id of the pet to be deleteed</param>
+            <returns>The list of pets after deletion</returns>
+        </member>
+    </members>
+</doc>
